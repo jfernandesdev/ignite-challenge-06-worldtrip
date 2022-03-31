@@ -7,8 +7,7 @@ export default function Home() {
         <title>Home | World Trip</title>
       </Head>
 
-      <h1>Hello World!</h1>
-      <img src="/logo-worldtrip.svg" alt="World Trip" />
+      <h1>I am Home!</h1>
     </>
   );
 }
