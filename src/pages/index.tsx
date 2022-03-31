@@ -2,23 +2,24 @@ import Head from 'next/head';
 
 import { Flex, Box, Text, Image } from '@chakra-ui/react';
 
+import { TravelTypes } from '../components/TravelTypes';
+
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Home | World Trip</title>
+        <title>Home - World Trip</title>
       </Head>
 
       <Flex
-        bgImg="/sky-background.svg"
-        w="100%"
-        justify="center"
         h={325}
+        bgImg="/sky-background.svg"
+        justify="center"
         bgRepeat="no-repeat"
         bgSize="cover"
       >
-        <Flex maxWidth={1480} px="6" align="center" justify="space-between">
-          <Box maxWidth={450} mr="8">
+        <Flex align="center" justify="space-around" w="100%">
+          <Box maxWidth={450}>
             <Text
               as="h1"
               fontSize={['2xl', '4xl']}
@@ -28,15 +29,21 @@ export default function Home() {
               5 Continentes, <br /> infinitas possibilidades.
             </Text>
             <Text fontSize="lg" color="gray.100" mt="4">
-              Chegou a hora de tirar do papel a viagem que você sempre sonhou.{' '}
+              Chegou a hora de tirar do papel a viagem que você sempre sonhou.
             </Text>
           </Box>
 
-          <Image src="/airplane.svg" alt="Yellow Airplane" mt="17%" />
+          <Image src="/airplane.svg" alt="Yellow Airplane" mt="10%" />
         </Flex>
       </Flex>
 
-      
+      <Flex align="center" justify="space-between" p="6% 10%">
+        <TravelTypes icon="/cocktail.svg" text="vida noturna" />
+        <TravelTypes icon="/beach.svg" text="praia" />
+        <TravelTypes icon="/building.svg" text="moderno" />
+        <TravelTypes icon="/museum.svg" text="clássico" />
+        <TravelTypes icon="/earth.svg" text="e mais..." />
+      </Flex>
     </>
   );
 }
