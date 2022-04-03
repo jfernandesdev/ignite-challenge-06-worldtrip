@@ -20,7 +20,18 @@ export const theme = extendTheme({
     global: {
       body: {
         bg: 'gray.50',
-        color: 'gray.900'
+        color: 'gray.900',
+      },
+      '.swiper-button-next, .swiper-button-prev': {
+        color: 'yellow.500',
+        padding: '0 30px'
+      },
+      '.swiper-pagination-bullet': {
+        background: 'gray.200',
+        opacity: '1'
+      },
+      '.swiper-pagination-bullet-active': {
+        background: 'yellow.500',
       },
     },
   },
