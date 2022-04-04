@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
-import { Flex, Link, Icon, Image } from '@chakra-ui/react'; 
+import Link from 'next/link';
+import { Flex, Icon, Image } from '@chakra-ui/react'; 
 import { FiChevronLeft  } from 'react-icons/fi';
 
 export function Header() {
@@ -17,8 +18,8 @@ export function Header() {
       >
       
       {(asPath !== '/') ? (
-        <Link href='/' w={8} h={8}>
-          <Icon as={FiChevronLeft} w={8} h={8} />
+        <Link href='/'>
+          <Icon as={FiChevronLeft} w={8} h={8}  cursor='pointer'/>
         </Link>
       ) : <Flex />}
 

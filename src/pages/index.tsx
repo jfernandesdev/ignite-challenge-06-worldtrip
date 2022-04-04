@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { Flex, Box, Text, Image, Center, Divider } from '@chakra-ui/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,8 +10,27 @@ import { TravelTypes } from '../components/TravelTypes';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import api from '../services/api';
+
+interface ContinentData {
+  id: string;
+  name: string;
+  description: string;
+  bannerImage: string;
+}
 
 export default function Home() {
+  const [continents, setContinents] = useState<ContinentData[]>([]);
+
+  useEffect(() => {
+    async function loadContinentData() {
+      const response = await api.get('/continents');
+      setContinents(response.data);
+    }
+
+    loadContinentData();
+  }, []);
+
   return (
     <>
       <Head>
@@ -70,23 +90,16 @@ export default function Home() {
           modules={[Navigation, Pagination, Keyboard]}
         >
 
-          <SwiperSlide>
-            <SlideItem
-              slug='europe'
-              name='Europa'
-              description='O continente mais antigo'
-              imageUrl='https://source.unsplash.com/EXdXLrZXS9Q'
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <SlideItem 
-              slug='asia'
-              name='Asia'
-              description='O mais extenso e mais populoso continente do mundo'
-              imageUrl='https://source.unsplash.com/WHhbYArwFt8'
-            />
-          </SwiperSlide>
+          {continents && continents.map(continent => (
+            <SwiperSlide key={continent.id}>
+              <SlideItem
+                id={continent.id}
+                name={continent.name}
+                description={continent.description}
+                bannerImage={continent.bannerImage}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </Box>
     </>

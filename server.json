@@ -1,8 +1,7 @@
 {
   "continents": [
     {
-      "id": 1,
-      "slug": "europe",
+      "id": "europe",
       "name": "Europa",
       "description": "O continente mais antigo",
       "text": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
@@ -50,8 +49,7 @@
       ]
     },
     {
-      "id": 2,
-      "slug": "asia",
+      "id": "asia",
       "name": "Ásia",
       "description": "O mais extenso e mais populoso continente do mundo",
       "text": "A Ásia é o maior continente, tanto em área (chega a quase um terço de todas as terras emersas do nosso planeta) como em população, onde habitam aproximadamente 4,5 bilhões de habitantes.",
@@ -99,8 +97,7 @@
       ]
     },
     {
-      "id": 3,
-      "slug": "africa",
+      "id": "africa",
       "name": "África",
       "description": "Abriga uma enorme variedade climática e cultural com desertos, savanas e florestas",
       "text": "África é um dos seis continentes do mundo, sendo o terceiro maior em extensão territorial. É conhecida pela sua pluralidade étnica e cultural, e, por meio de uma história milenar, é capaz de contar a história de toda a humanidade.",
@@ -136,8 +133,7 @@
       ]
     },
     {
-      "id": 4,
-      "slug": "north-america",
+      "id": "north-america",
       "name": "América do Norte",
       "description": "Possui uma das maiores potências econômicas mundiais",
       "text": "A América do Norte está localizada no extremo norte das Américas e é composta por apenas três países: Estados Unidos, Canadá e México, além de territórios de domínios europeus, como a Groelândia (pertencente ao Reino da Dinamarca, com representação no parlamento) e Bermudas (dependência britânica).",
@@ -185,8 +181,7 @@
       ]
     },
     {
-      "id": 5,
-      "slug": "south-america",
+      "id": "south-america",
       "name": "América do Sul",
       "description": "A mais rica do mundo em biodiversidade e meio ambiente",
       "text": "A América do Sul está localizada em grande parte no hemisfério sul, na zona intertropical ocidental. A América do Sul abrange um território de 18 milhões de quilômetros quadrados e é banhada a leste pelo oceano Atlântico, a oeste pelo oceano Pacífico e ao norte pelo mar das Antilhas, conhecido como do Caribe.",
@@ -216,8 +211,7 @@
       ]
     },
     {
-      "id": 6,
-      "slug": "oceania",
+      "id": "oceania",
       "name": "Oceania",
       "description": "Composta por diversas ilhas de culturas diferentes",
       "text": "A Oceania é o continente mais isolado do mundo, sua barreira geográfica fez com que fosse o último a ser descoberto pelos europeus. Em razão desse atraso em seu descobrimento ficou conhecido como 'mundo novo'.",

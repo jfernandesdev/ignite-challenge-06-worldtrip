@@ -1,15 +1,16 @@
-import { Link, Flex, Text } from '@chakra-ui/react';
+import Link from 'next/link';
+import { Flex, Text } from '@chakra-ui/react';
 
 interface SlideItemProps {
-  slug: string;
-  imageUrl: string;
+  id: string;
   name: string;
   description: string;
+  bannerImage: string;
 }
 
-export function SlideItem({ slug, imageUrl, name, description}: SlideItemProps) {
+export function SlideItem({ id, bannerImage, name, description}: SlideItemProps) {
   return (
-    <Link href={`continent/${slug}`} style={{ textDecoration: 'none' }}>
+    <Link href={`continent/${id}`}>
       <Flex
         h={450}
         align="center"
@@ -18,7 +19,9 @@ export function SlideItem({ slug, imageUrl, name, description}: SlideItemProps) 
         bgRepeat="no-repeat"
         bgSize="cover"
         bgPosition="center"
-        bgImage={`linear-gradient(0deg, rgba(28, 20, 1, 0.35), rgba(28, 20, 1, 0.35)), url('${imageUrl}')`}
+        bgImage={`linear-gradient(0deg, rgba(28, 20, 1, 0.35), rgba(28, 20, 1, 0.35)), url('${bannerImage}')`}
+        style={{ textDecoration: 'none' }}
+        cursor='pointer'
       >
         <Text
           as="h2"
