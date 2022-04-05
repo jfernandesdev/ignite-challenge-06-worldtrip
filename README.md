@@ -44,14 +44,14 @@ $ yarn dev
 
 | Home  | Continent Page | 
 | --- | --- |
-| <img src="https://github.com/jfernandesdev/" /> | <img src="https://github.com/jfernandesdev/" /> | 
+| <img src="https://github.com/jfernandesdev/ignite-challenge-06-worldtrip/blob/85ac1f977f3644a78ceb33f480fdbaa84860e14e/public/layout/home-desktop.png" /> | <img src="https://github.com/jfernandesdev/ignite-challenge-06-worldtrip/blob/85ac1f977f3644a78ceb33f480fdbaa84860e14e/public/layout/page-continent-desktop.png" /> | 
 
 
 ### Mobile (screenshot):
 
 | Home 1 | Home 2 | Continent 1 | Continent 2 |
 | --- | --- | --- | --- |
-| <img src="https://github.com/jfernandesdev" width='275px' /> | <img src="https://github.com/jfernandesdev/" width='275px' /> | <img src="https://github.com/jfernandesdev" width='275px' /> | <img src="https://github.com/jfernandesdev" width='275px' /> |
+| <img src="https://github.com/jfernandesdev/ignite-challenge-06-worldtrip/blob/85ac1f977f3644a78ceb33f480fdbaa84860e14e/public/layout/home-mobile-1.png" width='275px' /> | <img src="https://github.com/jfernandesdev/ignite-challenge-06-worldtrip/blob/85ac1f977f3644a78ceb33f480fdbaa84860e14e/public/layout/home-mobile-2.png" width='275px' /> | <img src="https://github.com/jfernandesdev/ignite-challenge-06-worldtrip/blob/85ac1f977f3644a78ceb33f480fdbaa84860e14e/public/layout/page-continent-mobile-1.png" width='275px' /> | <img src="https://github.com/jfernandesdev/ignite-challenge-06-worldtrip/blob/85ac1f977f3644a78ceb33f480fdbaa84860e14e/public/layout/page-continent-mobile-2.png" width='275px' /> |
 
 <br>
 
