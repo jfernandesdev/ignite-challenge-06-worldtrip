@@ -12,7 +12,7 @@ export function SlideItem({ id, bannerImage, name, description}: SlideItemProps)
   return (
     <Link href={`continent/${id}`}>
       <Flex
-        h={450}
+        h={[250, 450]}
         align="center"
         justify="center"
         direction="column"
@@ -33,7 +33,7 @@ export function SlideItem({ id, bannerImage, name, description}: SlideItemProps)
          {name}
         </Text>
 
-        <Text fontSize={'xl'} color="gray.100" fontWeight={700}>
+        <Text fontSize={['sm', 'xl']} color="gray.100" fontWeight={700} maxWidth={'90%'}>
           {description}
         </Text>
       </Flex>

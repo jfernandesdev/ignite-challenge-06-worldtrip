@@ -16,7 +16,7 @@ export function InfoContinent({
     <Flex direction="column" alignItems='center'>
       <Text
         as="span"
-        fontSize="5xl"
+        fontSize={["2xl", "5xl"]}
         lineHeight="1"
         fontWeight={600}
         color="yellow.500"
@@ -24,12 +24,12 @@ export function InfoContinent({
         {amountInfo}
       </Text>
 
-      <Text fontSize="2xl" fontWeight={600} display="flex" alignItems="center">
+      <Text fontSize={["sm", "2xl"]} fontWeight={[400, 600]} display="flex" alignItems="center">
         {infoDescription}
 
         {!!tooltip && (
           <Tooltip hasArrow label={tooltip} bg="gray.100" color="black">
-            <Button variant="unstyled" color="gray.200" p="5px">
+            <Button variant="unstyled" color="gray.200" p={"0 5px"} height='auto'>
               <RiInformationLine />
             </Button>
           </Tooltip>

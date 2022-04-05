@@ -24,11 +24,19 @@ export const theme = extendTheme({
       },
       '.swiper-button-next, .swiper-button-prev': {
         color: 'yellow.500',
-        padding: '0 30px'
+        padding: '0 30px',
+      },
+      '@media (max-width: 769px)': {
+        '.swiper-button-next, .swiper-button-prev': {
+          padding: '0',
+        },
+        '.swiper-button-next:after, .swiper-button-prev:after': {
+          fontSize: '20px',
+        },
       },
       '.swiper-pagination-bullet': {
         background: 'gray.200',
-        opacity: '1'
+        opacity: '1',
       },
       '.swiper-pagination-bullet-active': {
         background: 'yellow.500',

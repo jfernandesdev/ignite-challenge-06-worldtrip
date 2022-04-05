@@ -26,13 +26,13 @@ export function CardCity({ city }: CardCityProps) {
         objectFit="cover"
       />
 
-      <Flex justify="space-between" align="center" p="4">
+      <Flex justify="space-between" align="center" p={"4"}>
         <VStack alignItems="left">
-          <Text fontWeight={600} fontSize="2xl">
+          <Text fontWeight={600} fontSize={["xl", "2xl"]}>
             {city.cityName}
           </Text>
 
-          <Text as="span" color="gray.200" fontSize="md">
+          <Text as="span" color="gray.200" fontSize={["sm", "md"]}>
             {city.countryName}
           </Text>
         </VStack>

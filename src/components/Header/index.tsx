@@ -11,19 +11,20 @@ export function Header() {
       as='header'
       w='100%'
       maxWidth={1200}
-      h='20'
+      h={['50px', '20']}
       mx='auto'
       align='center'
       justify='space-between'
+      p={'6'}
       >
       
       {(asPath !== '/') ? (
         <Link href='/'>
-          <Icon as={FiChevronLeft} w={8} h={8}  cursor='pointer'/>
+          <Icon as={FiChevronLeft} w={[6, 8]} h={[6, 8]}  cursor='pointer'/>
         </Link>
       ) : <Flex />}
 
-      <Image src='/logo-worldtrip.svg' alt='World Trip'/>
+      <Image src='/logo-worldtrip.svg' alt='World Trip' w={[81, 'auto']}/>
       <Flex />
     </Flex>
   )

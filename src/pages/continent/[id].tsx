@@ -35,9 +35,10 @@ export default function Continent({ continent }: ContinentProps) {
       </Head>
 
       <Flex
-        h={500}
+        h={[150, 500]}
         padding="5% 8%"
-        align="flex-end"
+        align={["center", "flex-end"]}
+        justify={["center", "left"]}
         bgRepeat="no-repeat"
         bgSize="cover"
         bgPosition="center"
@@ -54,9 +55,9 @@ export default function Continent({ continent }: ContinentProps) {
         </Text>
       </Flex>
 
-      <Grid p="5% 8% 3%" templateColumns="repeat(2, 1fr)" gap="8">
+      <Grid p="5% 8% 3%" templateColumns={["1fr", "repeat(2, 1fr)"]} gap="8">
         <GridItem>
-          <Text fontSize="2xl" align="justify">
+          <Text fontSize={["sm", "2xl"]} align="justify">
             {continent.text}
           </Text>
         </GridItem>
@@ -80,12 +81,12 @@ export default function Continent({ continent }: ContinentProps) {
         </Flex>
       </Grid>
 
-      <Flex direction="column" p="0% 8% 3%">
-        <Text fontSize="3xl" fontWeight={500} mb="8">
+      <Flex direction="column" p="3% 8% 3%">
+        <Text fontSize={["2xl", "3xl"]} fontWeight={500} mb={["6", "8"]}>
           Cidades +100
         </Text>
 
-        <Grid templateColumns="repeat(4, 1fr)" gap="8">
+        <Grid templateColumns={["1fr", "repeat(4, 1fr)"]} gap="8">
           {continent.mostPopularCities.map((city, i) => (
             <CardCity key={i} city={city} />
           ))}
